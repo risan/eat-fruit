@@ -1,0 +1,38 @@
+{
+  "name": "eat-fruit",
+  "description": "Package to print some random fruit I eat.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "homepage": "https://github.com/risan/eat-fruit#readme",
+  "author": {
+    "name": "Risan Bagja Pradana",
+    "email": "risanbagja@gmail.com",
+    "url": "https://bagja.net"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/risan/eat-fruit.git"
+  },
+  "main": "dist/eat-fruit.cjs.js",
+  "browser": "dist/eat-fruit.umd.js",
+  "module": "dist/eat-fruit.es.js",
+  "engines": {
+    "node": ">= 6"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "rollup": "^0.66.6",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-terser": "^3.0.0"
+  }
+}
