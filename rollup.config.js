@@ -23,6 +23,7 @@ export default [
             '@babel/env',
             {
               modules: false,
+              useBuiltIns: "usage",
               targets: 'maintained node versions'
             }
           ]
